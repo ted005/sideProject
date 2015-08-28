@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    路漫漫其修远兮，                                              吾将上下而求索。" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsy-TZ-1iX">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="264" id="5jD-8E-g3T"/>
+                        <constraint firstAttribute="height" constant="71" id="NNO-SI-WrE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5jD-8E-g3T"/>
+                            <exclude reference="NNO-SI-WrE"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="5jD-8E-g3T"/>
+                            <include reference="NNO-SI-WrE"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="屈原 《离骚》" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kie-g5-yoV">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kie-g5-yoV" firstAttribute="top" secondItem="lsy-TZ-1iX" secondAttribute="bottom" constant="25" id="VlM-vP-dcj"/>
+                <constraint firstItem="lsy-TZ-1iX" firstAttribute="trailing" secondItem="kie-g5-yoV" secondAttribute="trailing" id="oOX-Am-xtX"/>
+                <constraint firstItem="lsy-TZ-1iX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="204" id="pWu-jx-lmy">
+                    <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="lsy-TZ-1iX" secondAttribute="centerY" id="sZA-Ub-uNj"/>
+                <constraint firstAttribute="centerX" secondItem="lsy-TZ-1iX" secondAttribute="centerX" id="uFQ-dr-yTw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="lsy-TZ-1iX"/>
+                    <exclude reference="kie-g5-yoV"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="VlM-vP-dcj"/>
+                    <exclude reference="oOX-Am-xtX"/>
+                    <exclude reference="pWu-jx-lmy"/>
+                    <exclude reference="sZA-Ub-uNj"/>
+                    <exclude reference="uFQ-dr-yTw"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="lsy-TZ-1iX"/>
+                    <include reference="kie-g5-yoV"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="VlM-vP-dcj"/>
+                    <include reference="oOX-Am-xtX"/>
+                    <include reference="pWu-jx-lmy"/>
+                    <exclude reference="sZA-Ub-uNj"/>
+                    <include reference="uFQ-dr-yTw"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+</document>
